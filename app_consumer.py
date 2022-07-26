@@ -4,6 +4,7 @@ from flask_socketio import join_room
 from init_consumer import app, socketio
 import json
 import uuid
+import redis    
 
 #Render the assigned template file
 @app.route("/", methods=['GET'])

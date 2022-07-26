@@ -16,9 +16,14 @@ MAX_NBR_TASKS = 100
 WAIT_TIME = 1
 
 #Webhook endpoint Mapping to the listener
-WEBHOOK_RECEIVER_URL = 'http://localhost:5001/consumetasks'
+WEBHOOK_RECEIVER_URL = 'rediss://:2IHchZ2uPNdNte39p5roLu4Sv2vL59Re9AzCaBOqprM=@POW.redis.cache.windows.net:6380/0?ssl_cert_reqs=required'
 #######################################
 
 #Map to the REDIS Server Port
-BROKER_URL = 'redis://localhost:6379'
+BROKER_URL = 'rediss://:2IHchZ2uPNdNte39p5roLu4Sv2vL59Re9AzCaBOqprM=@POW.redis.cache.windows.net:6380/0?ssl_cert_reqs=required'
 #######################################
+
+AZURE_REDIS_CONNECTIONSTRING = "2IHchZ2uPNdNte39p5roLu4Sv2vL59Re9AzCaBOqprM=@POW.redis.cache.windows.net:6380/0?ssl_cert_reqs=required"
+
+#"POW.redis.cache.windows.net"
+#myPassword = "2IHchZ2uPNdNte39p5roLu4Sv2vL59Re9AzCaBOqprM="
